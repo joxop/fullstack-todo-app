@@ -18,7 +18,7 @@ mongoose.connect(`mongodb+srv://testing:${password}@cluster0.aldzgns.mongodb.net
   .catch(console.error);
 
 
-const Todo = require('./models/todo')
+const Todo = require('./models/Todo')
 
 app.get('/todos', async(req,res) =>{
   const todos = await Todo.find()
