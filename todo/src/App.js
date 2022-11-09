@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
-const API_BASE = "https://todo-ehhh.onrender.com"
+const API_BASE = "https://f2-ypym.onrender.com"
+// const API_BASE = "http://localhost:8080"
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -8,9 +9,9 @@ function App() {
 
   useEffect(()=> {
     GetTodos();
-    
     console.log(todos);
-  }, [])
+
+  }, [todos])
 
   const GetTodos = () => {
     fetch(API_BASE + "/todos")
