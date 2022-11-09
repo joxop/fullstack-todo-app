@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 const API_BASE = "https://f2-ypym.onrender.com"
 // const API_BASE = "http://localhost:8080"
 
+
 function App() {
   const [todos, setTodos] = useState([]);
   const [popupActive, setPopupActive] = useState(false);
@@ -9,7 +10,7 @@ function App() {
 
   useEffect(()=> {
     GetTodos();
-    console.log(todos);
+    // console.log(todos);
 
   }, [todos])
 
@@ -39,7 +40,7 @@ function App() {
     })
     .then(res => res.json());
 
-    setTodos(todos => todos.filter(todo => todo._id != data._id))
+    setTodos(todos => todos.filter(todo => todo._id  !== data._id))
   }
 const addTodo = async () => {
   const data = await fetch(API_BASE + "/todo/new",{
