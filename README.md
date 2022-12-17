@@ -1,8 +1,8 @@
 # fullstack-todo-app
 
 [Please Click Here for LIVE Demo](https://f1-9kbt.onrender.com/)
-<h2>Please give the server some time to spinup</h2>
-<h3>Thank you</h3>
+<h3>***Please give the server some time to spinup***</h3>
+<h4>Thank you</h4>
 
 
 This project I created a fullstack Todo app using vanilla Javascript, Express and MongoDb. 
